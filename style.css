@@ -1,0 +1,181 @@
+/* Overall background color, font, and layout of the page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  #dad4ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Style for the title */
+#title {
+    color: #241414;
+    padding: 10px;
+    font-weight: 900;
+}
+
+/* Style for the form */
+form {
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Style for the buttons */
+#btn {
+    background: none;
+    border: none; 
+    outline: none;
+    padding: 15px;
+    font-size: 1.8rem;
+    color: #241414;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Style for the icon */
+i {
+    pointer-events: none;
+}
+
+/* Hover effect for the button */
+#btn:hover {
+    text-shadow: 0 0 5px #241414;
+}
+
+/* Style for the input fields */
+#input {
+    background: none;
+    border: none; 
+    outline: none;
+    padding: 10px 15px;
+    min-width: 50%;
+    font-size: 1.4rem;
+    color: #241414;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px #241414;   
+}
+
+/* Style for the filter section */
+#filter {
+    width: 50%;
+    margin: 20px auto;
+    background: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+/* Style for the filter items */
+.filter {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    width: 50%;
+    text-decoration: none;
+    color: #241414;
+    align-items: center;
+    font-weight: 300;
+}
+  
+/* Hover effect for the filter items */
+.filter:hover{
+    box-shadow: 0 0 5px rgba(90, 89, 89, 0.456); 
+    border-radius: 0.5rem; 
+    transition: all 0.3s ease;
+    padding: 4px;
+    text-decoration: none;
+  }
+  
+/* Style for the to-do list */
+#list {
+    width: 80%;
+    margin: 2rem;
+    list-style: none;
+  }
+
+
+/* Style for each to-do item */
+  .todo {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #282828;
+    border-radius: 10px;
+    min-height: 3rem;
+    padding: 10px;
+    display: flex;
+    color: whitesmoke;
+    transition: all 0.3s ease;
+    align-items: center;
+  }
+  
+  /* Style for the to-do item text */
+  .todo span{
+    text-align: left;
+    padding-left: 20px;
+    width: 100%;
+  }
+  
+  /* Hover effect for the to-do item */
+  .todo:hover {
+    box-shadow: 0px 0px 15px rgba(37, 253, 37, 0.567);
+  }
+
+
+  /* Style for the check and trash icons */
+  .check, .trash {
+    cursor: pointer;
+    padding: 5px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    color: #7bcfa5;
+    text-shadow: 0px 0px 30px #7af5b8;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for the check icon */
+  .check:hover {
+    color: rgb(37, 253, 37);
+    text-shadow: 0px 0px 30px lightgreen;
+  }
+
+  /* Hover effect for the trash icon */
+  .trash:hover {
+    color: red;
+    text-shadow: 0px 0px 30px pink;
+  }
+
+  /* Fade out effect for deleting items */
+  .fade {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Style for completed to-do items */
+  .completed {
+    opacity: 0.4;
+    text-decoration: line-through;
+    transition: all 0.3s ease;
+  }
+
+
+   /* Style for selected text in Firefox */
+  --moz::selection {
+    background-color: #7af5b8;
+    color: #241414;
+  }
+  
+  /* Style for selected text */
+  ::selection {
+    background-color: #7af5b8;
+    color: #241414;
+  }

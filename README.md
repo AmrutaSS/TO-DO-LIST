@@ -1,6 +1,8 @@
 # To-Do List Application
 This is a simple to-do list application that allows users to add, delete, and filter tasks.
 
+[View Website](https://amrutass.github.io/TO-DO-LIST/) 
+
 ## Features
 * Add new tasks with a click of a button
 * Delete existing tasks with a click of a button
